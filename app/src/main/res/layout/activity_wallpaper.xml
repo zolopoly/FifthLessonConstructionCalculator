@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".WallpaperActivity">
+
+    <TextView
+        android:id="@+id/header_one"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/calculator_title"
+        android:layout_marginTop="30dp"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="#177C3A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/header_two"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:gravity="top"
+        android:text="@string/calculate_wallpaper"
+        android:textColor="#4C9063"
+        android:textSize="19sp"
+        android:textStyle="bold"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_one" />
+
+    <LinearLayout
+        android:id="@+id/linearEditText"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/header_two">
+
+        <EditText
+            android:id="@+id/square"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:hint="Площадь оклеиваемой поверхности (метров квадратных)"
+            android:textColor="#175F7C"
+            android:textColorHint="#175F7C"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:background="#B1D2DF"
+            android:ems="10"
+            android:gravity="top"
+            android:padding="14dp"
+            android:layout_marginBottom="14dp"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/widthWallpaper"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:hint="Ширина рулона (сантиметров)"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:padding="14dp"
+            android:layout_marginBottom="14dp"
+            android:inputType="textMultiLine"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/heightWallpaper"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:hint="Длина рулона (метров)"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:padding="14dp"
+            android:layout_marginBottom="14dp"
+            android:inputType="textMultiLine"
+            tools:ignore="TextFields" />
+
+        <EditText
+            android:id="@+id/costWallpaper"
+            android:layout_width="350dp"
+            android:layout_height="70dp"
+            android:hint="Стоимость одного рулона (монет)"
+            android:textColor="#177C3A"
+            android:textColorHint="#177C3A"
+            android:textSize="17sp"
+            android:textStyle="italic"
+            android:background="#B1DFC1"
+            android:ems="10"
+            android:gravity="top"
+            android:padding="14dp"
+            android:layout_marginBottom="14dp"
+            android:inputType="textMultiLine" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="350dp"
+        android:layout_height="70dp"
+        android:text="Расчёт количества обоев"
+        android:textSize="17sp"
+        android:backgroundTint="#177C3A"
+        android:layout_marginTop="14dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearEditText" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

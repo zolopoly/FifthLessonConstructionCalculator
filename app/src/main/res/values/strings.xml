@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">FifthLessonConstructionCalculator</string>
+    <string name="calculator_title">ПРИЛОЖЕНИЕ\nСТРОИТЕЛЬНЫЙ КАЛЬКУЛЯТОР</string>
+    <string name="calculate_wallpaper">Расчёт обоев:</string>
+    <string name="calculate_drywall">Расчёт гипсокартона:</string>
+    <string name="calculate_drywall_action_button">Расчёт количества гипсокартона</string>
+    <string name="drywall_price_per_unit">Стоимость одного листа гипсокартона (монет)</string>
+    <string name="drywall_unit_length">Длина листа гипсокартона (метров)</string>
+    <string name="drywall_unit_width">Ширина листа гипсокартона (метров)</string>
+    <string name="application_surface_area">Площадь оклеиваемой поверхности (метров квадратных)</string>
+</resources>
